@@ -275,4 +275,46 @@ html{
 
 
 /* Section - 4 */
+
+.section-4{
+    width: 100%;
+    height: 20vh;
+    background-color: #252222;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.section-4-text{
+    text-transform: uppercase;
+}
+
+.section-4-heading{
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    color: rgb(157, 157, 54);
+}
+
+.section-4-paragraph{
+    font-size: 1.2rem;
+    font-weight: 150;
+    letter-spacing: .1rem;
+    color: #676363;
+}
+
+.signup-form{
+    display: flex;
+    align-items: center;
+}
+
+.signup-input{
+    width: 20rem;
+    height: 3rem;
+    padding: 1rem;
+    border: solid 0.15rem rgb(157, 157, 54);
+    font-size: 1.5rem;
+}
+
 /* End of Section - 4 */
