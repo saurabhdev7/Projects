@@ -16,12 +16,64 @@ html{
 
 /* Section - 1 */
 
-.section-1{
+.section-1 {
     width: 100%;
     height: 100vh;
-    background: url(bg-light.jpg) no-repeat;
+    background: url(04.jpg) no-repeat;
     background-size: cover;
 }
+
+.banner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.banner-heading{
+    margin-bottom: 4rem;
+    height: 18rem;
+}
+
+.banner-heading span{
+    font-size: 9rem;
+    font-family: oswald , sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: .3rem .3rem .6rem rgba(0,0,0,0.5);
+}  
+
+.banner-paragraph{
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.5);
+    width: 30%;
+    margin: 0 auto 4rem auto;
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 5rem rgba(0,0,0,0.5);
+}
+
+.banner-btn{
+    width: 25rem;
+    height: 4rem;
+    background: linear-gradient(to right, #96103c, #7b2b15);
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: .1rem solid #760a0a;
+    box-shadow: 1rem 2rem 3rem rgba(0,0,0,0.5);
+    text-shadow: 0.6rem 0.3rem .2rem rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
 
 
 /* End of section - 1 */
