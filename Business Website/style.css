@@ -35,6 +35,8 @@ html{
 .banner-heading{
     margin-bottom: 4rem;
     height: 18rem;
+    perspective: 50rem;
+    overflow: hidden;
 }
 
 .banner-heading span{
@@ -45,7 +47,14 @@ html{
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: .3rem .3rem .6rem rgba(0,0,0,0.5);
-}  
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    transform: translateZ(8rem);
+    opacity: 0;
+    letter-spacing: 3rem;
+}
 
 .banner-paragraph{
     padding: 0.5rem 0;
