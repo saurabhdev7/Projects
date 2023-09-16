@@ -17,12 +17,15 @@ html{
     width: 100%;
     height: 100vh;
     position: relative;
+    perspective: 100rem;
+    overflow: hidden;
 }
 
 .img-container{
     width: 100%;
     height: 110%;
     background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
 }
 
 .img-container img{
@@ -30,6 +33,18 @@ html{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
+    animation-name: scaleIt;
+    animation-duration: 20s;
+    /* animation-timing-function: ease; */
+}
+
+@keyframes scaleIt{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .banner{
@@ -40,11 +55,84 @@ html{
 
 .banner h1{
     font-family: 'Baloo Da 2' , sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 500;
+    width: 70%;
+    margin-bottom: 1.5rem;
+    line-height: 5rem;
+    letter-spacing: .2rem;
+    text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation-name: moveBanner;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.banner p{
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.2rem;
     color: #fff;
     font-weight: 400;
     width: 70%;
-    line-height: 5rem;
-    letter-spacing: .2rem;
-    text-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
+    letter-spacing: .1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation-name: moveBanner;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.banner button{
+    font-family: 'Muli', serif;
+    font-size: 1.3rem;
+    background-color: #c29525;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation-name: moveBanner;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+.hamburger-menu{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    top: 5rem;
+    right: 5rem;
+    z-index: 200;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.line{
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes moveBanner{
+    0%{
+        transform: translateY(40rem) rotate(-20deg);
+    }
+
+    100%{
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+
 }
