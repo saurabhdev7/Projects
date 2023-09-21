@@ -352,6 +352,33 @@ img{
     grid-row: 5 / -1;
 }
 
+.service-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.service-header i{
+    font-size: 2.5rem;
+    color: #64625e;
+    margin-right: 1rem;
+}
+
+.service-header h3{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.service-text{
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 600;
+}
+
 .about-us-img-wrapper{
     grid-column: 7 / 11;
     grid-row: 2 / 6;
