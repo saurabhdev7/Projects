@@ -390,3 +390,103 @@ img{
     object-fit: cover;
     opacity: 0.7;
 }
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 5rem 15rem 5rem;
+}
+
+.cards-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.card{
+    width: 22rem;
+    height: 30rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+}
+
+
+.card-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    transition: opacity 0.5s;
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: 0.3;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.card:hover .card-info{
+    bottom: 0.5rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-info h2{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    color: #eee;
+    font-weight: 300;
+}
+
+.card-info h3{
+    font-family: 'Muli', serif;
+    font-size: 1.5rem;
+    color: #a94d4d;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.card-info p{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    color: #eee;
+    font-weight: 200;
+    width: 80%;
+    margin-bottom: 0.8rem;
+}
+
+.card-info button{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #c29525;
+    border: none;
+    color: #fff;
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
