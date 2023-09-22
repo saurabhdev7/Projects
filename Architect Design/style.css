@@ -547,6 +547,14 @@ img{
     color: #4b4b4b;
 }
 
+.field:focus{
+    border-bottom-style: solid;
+}
+
+.input-group{
+    position: relative;
+}
+
 .input-group input{
     height: 4rem;
 }
@@ -554,4 +562,97 @@ img{
 .input-group textarea{
     max-height: 5rem;
     max-width: 35rem;
+}
+
+.input-group label{
+    position: absolute;
+    left: 0;
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.5rem;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.input-lable{
+    bottom: 2rem;
+}
+
+.message{
+    bottom: 4rem;
+}
+
+.field:focus ~ label{
+    transform: translateY(-2rem);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #c29525;
+}
+
+.submit-btn{
+    width: 20rem;
+    height: 3rem;
+    background-color: #c29525;
+    border: none;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-family: 'Muli', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.copyright{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.2rem;
+    color: #a7a7a7
+}
+
+.social-list a{
+    margin: 0 2rem;
+}
+
+
+.social-list i{
+    font-size: 2rem;
+    color: #a7a7a7;
+}
+
+.scroll-btn{
+    position: fixed;
+    right: 5rem;
+    width: 3rem;
+    height: 3rem;
+    bottom: 4rem;
+    background-color: #c29525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
 }
